@@ -18,7 +18,6 @@ amount = st.number_input('Enter amount:', min_value=0.0)
 
 exchange_rate = get_exchange_rate(base_currency, target_currency)
 
-# Ensure that the exchange_rate is a float and not a function
 if exchange_rate is not None:
     converted_amount = convert_currency(amount, exchange_rate)
     st.write(f"{amount} {base_currency} is {converted_amount} {target_currency}")
