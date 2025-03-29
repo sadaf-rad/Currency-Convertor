@@ -1,9 +1,7 @@
 import streamlit as st
 
 
-
-
-from modules import currencies
+import currencies
 
 from main import get_exchange_rate, convert_currency
 
