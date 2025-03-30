@@ -1,1 +1,5 @@
 currencies
+cachetools
+requests
+streamlit
+beautifulsoup4

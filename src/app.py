@@ -1,8 +1,5 @@
 import streamlit as st
-
-
 import currencies
-
 from main import get_exchange_rate, convert_currency
 
 st.title(' :dollar: Currency Convertor')
@@ -10,7 +7,8 @@ st.markdown("""
             This tool allows you to convert amounts between different currencies.
             Just Enter the amount and choose the currencies to see the results.
             """) 
-currencies= list(currencies.MONEY_FORMATS.keys())
+
+currencies = list(currencies.MONEY_FORMATS.keys()) + ['IRT']
 
 base_currency = st.selectbox('From currency (Base):', currencies)
 target_currency = st.selectbox('To currency (Target):', currencies)
